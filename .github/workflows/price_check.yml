@@ -6,6 +6,9 @@ on:
     - cron: '0 7,18 * * *'
   workflow_dispatch:  # Allows manual runs
 
+permissions:
+  contents: write
+
 jobs:
   check-price:
     runs-on: ubuntu-latest
@@ -13,6 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -30,6 +35,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add price_history.txt
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update price history"
-          git push
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update price history" && git push)
