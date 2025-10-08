@@ -1,0 +1,35 @@
+name: Price Checker
+
+on:
+  schedule:
+    # Runs at 7:00 and 18:00 UTC (9 AM and 8 PM Romania time)
+    - cron: '0 7,18 * * *'
+  workflow_dispatch:  # Allows manual runs
+
+jobs:
+  check-price:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+      
+      - name: Run price checker
+        run: python price_checker.py
+      
+      - name: Commit price history
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add price_history.txt
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update price history"
+          git push
