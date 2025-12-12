@@ -128,3 +128,4 @@
 [2025-12-10 18:19:30] Price not found - check selectors
 [2025-12-11 07:18:04] Price not found - check selectors
 [2025-12-11 18:17:30] Price not found - check selectors
+[2025-12-12 07:16:28] ERROR: HTTP Error 511: 511 Server Error:  for url: https://www.emag.ro/tableta-samsung-galaxy-tab-s10-lite-10-9-8gb-ram-256gb-5g-gray-sm-x406bzapeue/pd/DM78TS3BM/?ref=fam
