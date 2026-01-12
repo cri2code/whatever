@@ -190,3 +190,4 @@
 [2026-01-10 18:17:31] Price not found - check selectors
 [2026-01-11 07:14:20] Price not found - check selectors
 [2026-01-11 18:18:08] Price not found - check selectors
+[2026-01-12 07:20:20] Price not found - check selectors
