@@ -695,3 +695,4 @@
 [2026-09-21 13:28:32] ERROR: HTTP Error 511: 511 Server Error:  for url: https://www.emag.ro/tableta-samsung-galaxy-tab-s10-lite-10-9-8gb-ram-256gb-5g-gray-sm-x406bzapeue/pd/DM78TS3BM/?ref=fam
 [2026-09-21 21:24:38] ERROR: HTTP Error 511: 511 Server Error:  for url: https://www.emag.ro/tableta-samsung-galaxy-tab-s10-lite-10-9-8gb-ram-256gb-5g-gray-sm-x406bzapeue/pd/DM78TS3BM/?ref=fam
 [2026-09-22 12:12:54] ERROR: HTTP Error 511: 511 Server Error:  for url: https://www.emag.ro/tableta-samsung-galaxy-tab-s10-lite-10-9-8gb-ram-256gb-5g-gray-sm-x406bzapeue/pd/DM78TS3BM/?ref=fam
+[2026-09-22 20:39:18] ERROR: HTTP Error 511: 511 Server Error:  for url: https://www.emag.ro/tableta-samsung-galaxy-tab-s10-lite-10-9-8gb-ram-256gb-5g-gray-sm-x406bzapeue/pd/DM78TS3BM/?ref=fam
